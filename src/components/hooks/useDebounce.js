@@ -8,9 +8,6 @@ export async function searchForId(id, setSearchResults) {
     const config = {
       method: "get",
       url: `${baseUrl}/api/playersById/8r92jjqy`,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
     };
 
     axios(config)
@@ -37,19 +34,3 @@ export function useDebounce(search, delay) {
   // console.log(debounced);
   return debounced;
 }
-
-// var config = {
-//   method: "get",
-//   url: "https://api.clashofclans.com/v1/players/%238r92jjqy",
-//   headers: {
-//     Authorization: "",
-//   },
-// };
-
-// axios(config)
-//   .then(function (response) {
-//     console.log(JSON.stringify(response.data));
-//   })
-//   .catch(function (error) {
-//     console.log(error);
-//   });
