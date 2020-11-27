@@ -7,7 +7,7 @@ export async function searchForId(id, setSearchResults) {
     // console.log(id, key);
     const config = {
       method: "get",
-      url: `${baseUrl}/api/playersById/8r92jjqy`,
+      url: `${baseUrl}/api/playersById/${id}`,
     };
 
     axios(config)
